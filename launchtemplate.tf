@@ -1,31 +1,3 @@
-
-
-# variable "db_host" {
-#   type    = string
-#   default = "database-1.curgug8c6bsg.us-east-1.rds.amazonaws.com:3306"
-# }
-
-# variable "db_name" {
-#   type    = string
-#   default = "wordpress"
-# }
-# variable "db_user" {
-#   type    = string
-#   default = "admin"
-# }
-# variable "db_password" {
-#   type      = string
-#   sensitive = true
-# }
-variable "instance_type" {
-  type    = string
-  default = "t3.micro"
-}
-variable "key_name" {
-  type    = string
-  default = null
-}
-
 resource "aws_launch_template" "wp" {
   name_prefix   = "lt-wp-"
   image_id      = "ami-0360c520857e3138f"

@@ -29,3 +29,18 @@ variable "ami-instance" {
 variable "type-instance-ec2" {
   default = "t2.micro"
 }
+
+variable "username_db" {
+  description = "Username do banco de dados"
+  type        = string
+  sensitive   = true
+}
+
+variable "instance_type" {
+  type    = string
+  default = "t3.micro"
+}
+variable "key_name" {
+  type    = string
+  default = null
+}

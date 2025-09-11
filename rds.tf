@@ -7,7 +7,7 @@ resource "aws_db_instance" "wp" {
   instance_class        = "db.t3.micro"
 
   db_name  = "wordpress"
-  username = "admin"
+  username = var.username_db
   password = var.db_passwd
 
   db_subnet_group_name   = aws_db_subnet_group.db_subnet.name

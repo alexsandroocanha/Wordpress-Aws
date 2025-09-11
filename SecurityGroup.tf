@@ -116,7 +116,7 @@ resource "aws_db_subnet_group" "db_subnet" {
   }
 }
 
-# ---------------------------------------------------
+# -----------------------ALB--------------------------
 
 resource "aws_security_group" "alb" {
   name   = "alb-sg"
