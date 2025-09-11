@@ -4,7 +4,9 @@
 ## Visão Geral
 
 ```
-Objetivo: Hospedar WordPress altamente disponivel em EC2 com Auto Scaling atrás de ALB, com banco de dados RDS MySQL e armazenamento de mídia no EFS
+Objetivo: Hospedar WordPress altamente disponivel em
+EC2 com Auto Scaling atrás de ALB, com banco de dados
+RDS MySQL e armazenamento de mídia no EFS
 ``` 
 **Repositório criado 10/09/2025**
 
