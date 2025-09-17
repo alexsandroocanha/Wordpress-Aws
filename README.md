@@ -31,6 +31,13 @@ RDS MySQL e armazenamento de mídia no EFS
 > * RDS: banco gerenciado, snapshots, parâmetros.
 > * EFS: conteúdo WP compartilhado.
 
+## Informações adicionais
+* O **user data** esta dentro do bloco de criação da **instancia ec2**(ec2.tf), e também dentro da instancia do **Launche Template**
+* O bloco de locals esta la apenas para pegar o output e conseguir utiliza-lo dentro do script do ec2
+* Para o subir no git hub eu deixei o bloco de **ssh** do **bastion host** aberto para todos. É uma má pratica e caso venha utilizar em produção, altere a regra de **security group** para o seu ip privado
+* Caso tenha alguma critica positiva sobre o conteudo, ou tenha duvida em algum trecho do codigo não exite em me contactar, as minhas redes de contato sempre estarão ao final do arquivo
+
+
 ## Variáveis Principais
 
 **Variáveis do Terraform (tfvars):**
@@ -122,12 +129,6 @@ Simples, quando você rodar o "terraform apply" ele retornara algumas informaç�
 ```
 http://{alb_dns_name}
 ```
-
-## Informações adicionais
-* O **user data** esta dentro do bloco de criação da instancia ec2, e se por acaso queira altera-lo tera que alterar também dentro da instancia do Launche Template
-* O bloco de locals esta la apenas para pegar o output e conseguir utiliza-lo dentro do script do ec2
-* Para o subir no git hub eu deixei o bloco de **ssh** do **bastion host** aberto para todos. É uma má pratica e caso venha utilizar em produção, altere a regra de **security group** para o seu ip privado
-* Caso tenha alguma critica positiva sobre o conteudo, ou tenha duvida em algum trecho do codigo não exite em me contactar, as minhas redes de contato sempre estarão ao final do arquivo
 
 
 ### Informações para Contato
