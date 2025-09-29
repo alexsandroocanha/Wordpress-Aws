@@ -127,7 +127,7 @@ chown $USER:$USER nome-da-chave-ssh
 ## Entrar na pagina do Wordpress
 Simples, quando você rodar o "terraform apply" ele retornara algumas informações, uma delas é o "alb_dns_name". Basta você copiar este dns acrescentar o "http://" e acessar o seu wordpress
 ```
-http://{alb_dns_name}
+http://<alb_dns_name>
 ```
 
 
